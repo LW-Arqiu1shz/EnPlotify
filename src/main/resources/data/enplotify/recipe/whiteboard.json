@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["NNN", "NWN", "NNN"],
+  "key": { "N": "minecraft:iron_nugget", "W": "minecraft:white_dye" },
+  "result": { "id": "enplotify:whiteboard", "count": 1 }
+}

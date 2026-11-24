@@ -1,0 +1,171 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "enplotify:block/terminal_case",
+    "case": "enplotify:block/terminal_case",
+    "screen": "enplotify:block/terminal_screen",
+    "button": "enplotify:block/terminal_button"
+  },
+  "elements": [
+    {
+      "from": [
+        5,
+        0,
+        10
+      ],
+      "to": [
+        11,
+        1,
+        14
+      ],
+      "faces": {
+        "north": {
+          "texture": "#case"
+        },
+        "south": {
+          "texture": "#case"
+        },
+        "east": {
+          "texture": "#case"
+        },
+        "west": {
+          "texture": "#case"
+        },
+        "up": {
+          "texture": "#case"
+        },
+        "down": {
+          "texture": "#case"
+        }
+      }
+    },
+    {
+      "from": [
+        7,
+        1,
+        12
+      ],
+      "to": [
+        9,
+        4,
+        13
+      ],
+      "faces": {
+        "north": {
+          "texture": "#case"
+        },
+        "south": {
+          "texture": "#case"
+        },
+        "east": {
+          "texture": "#case"
+        },
+        "west": {
+          "texture": "#case"
+        },
+        "up": {
+          "texture": "#case"
+        },
+        "down": {
+          "texture": "#case"
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        4,
+        10
+      ],
+      "to": [
+        16,
+        14,
+        12
+      ],
+      "faces": {
+        "north": {
+          "texture": "#screen"
+        },
+        "south": {
+          "texture": "#case"
+        },
+        "east": {
+          "texture": "#case"
+        },
+        "west": {
+          "texture": "#case"
+        },
+        "up": {
+          "texture": "#case"
+        },
+        "down": {
+          "texture": "#case"
+        }
+      }
+    },
+    {
+      "from": [
+        3,
+        6,
+        12
+      ],
+      "to": [
+        13,
+        12,
+        13
+      ],
+      "faces": {
+        "north": {
+          "texture": "#case"
+        },
+        "south": {
+          "texture": "#case"
+        },
+        "east": {
+          "texture": "#case"
+        },
+        "west": {
+          "texture": "#case"
+        },
+        "up": {
+          "texture": "#case"
+        },
+        "down": {
+          "texture": "#case"
+        }
+      }
+    },
+    {
+      "from": [
+        6.5,
+        14,
+        10.4
+      ],
+      "to": [
+        9.5,
+        14.25,
+        11.6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#button"
+        },
+        "south": {
+          "texture": "#button"
+        },
+        "east": {
+          "texture": "#button"
+        },
+        "west": {
+          "texture": "#button"
+        },
+        "up": {
+          "texture": "#button"
+        },
+        "down": {
+          "texture": "#button"
+        }
+      }
+    }
+  ]
+}

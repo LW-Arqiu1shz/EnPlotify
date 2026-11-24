@@ -1,0 +1,121 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "north",
+        "screen": "desk"
+      },
+      "apply": {
+        "model": "enplotify:block/terminal_desk"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "screen": "wall"
+      },
+      "apply": {
+        "model": "enplotify:block/terminal_wall"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "keyboard": "true"
+      },
+      "apply": {
+        "model": "enplotify:block/keyboard"
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "screen": "desk"
+      },
+      "apply": {
+        "model": "enplotify:block/terminal_desk",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "screen": "wall"
+      },
+      "apply": {
+        "model": "enplotify:block/terminal_wall",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "keyboard": "true"
+      },
+      "apply": {
+        "model": "enplotify:block/keyboard",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "screen": "desk"
+      },
+      "apply": {
+        "model": "enplotify:block/terminal_desk",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "screen": "wall"
+      },
+      "apply": {
+        "model": "enplotify:block/terminal_wall",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "keyboard": "true"
+      },
+      "apply": {
+        "model": "enplotify:block/keyboard",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "screen": "desk"
+      },
+      "apply": {
+        "model": "enplotify:block/terminal_desk",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "screen": "wall"
+      },
+      "apply": {
+        "model": "enplotify:block/terminal_wall",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "keyboard": "true"
+      },
+      "apply": {
+        "model": "enplotify:block/keyboard",
+        "y": 270
+      }
+    }
+  ]
+}

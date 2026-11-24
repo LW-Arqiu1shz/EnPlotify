@@ -1,0 +1,52 @@
+{
+  "type_tick": {
+    "replace": false,
+    "category": "ui",
+    "subtitle": "enplotify.subtitles.type_tick",
+    "sounds": [
+      {
+        "name": "minecraft:random/click",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "terminal_audio": {
+    "category": "record",
+    "subtitle": "enplotify.subtitles.terminal_audio",
+    "sounds": [
+      {
+        "name": "minecraft:random/click",
+        "stream": true,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "printer_motor": {
+    "category": "block",
+    "subtitle": "enplotify.subtitles.printer_motor",
+    "sounds": [
+      {
+        "name": "minecraft:random/click",
+        "stream": true,
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "quest_shimmer": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "minecraft:block/amethyst/shimmer"
+      }
+    ]
+  },
+  "quest_enchant": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "minecraft:block/enchantment_table/enchant2"
+      }
+    ]
+  }
+}

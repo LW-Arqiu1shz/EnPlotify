@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="Arqiu-owo"
+# 模组列表里的封面（路径从 jar 根目录算起）。
+logoFile="assets/enplotify/icon.png"
+description='''
+沉浸式剧情前置库：黑屏逐字的剧情模式，以及可以自己写字、配图的海报、报纸、文档、黑板和白板。其它模组只需写好文本，就能用上这些。
+
+Immersive story library: a full-screen, typed-out story mode, plus posters, newspapers, documents, blackboards and whiteboards players can write on and illustrate. Other mods only supply the text to use them.
+'''
+[[mixins]]
+config="enplotify.mixins.json"
+[[dependencies.${mod_id}]]
+modId="neoforge"
+type="required"
+versionRange="[26.1,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.${mod_id}]]
+modId="minecraft"
+type="required"
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"

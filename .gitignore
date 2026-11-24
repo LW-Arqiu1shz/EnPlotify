@@ -1,0 +1,30 @@
+# Gradle / build output
+**/build/
+**/.gradle/
+**/run/
+**/logs/
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
+out/
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Archives and compiled jars
+*.zip
+*.jar
+
+# Local build round (-rN), not published
+round.properties
+
+# Jars of other mods needed to compile (Jade: compile only; FerricOxide: bundled)
+!compile-libs/*.jar
+
+# Local helper scripts
+tools/

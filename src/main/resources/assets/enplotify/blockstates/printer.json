@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "enplotify:block/printer"
+    },
+    "facing=east": {
+      "model": "enplotify:block/printer",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "enplotify:block/printer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "enplotify:block/printer",
+      "y": 270
+    }
+  }
+}

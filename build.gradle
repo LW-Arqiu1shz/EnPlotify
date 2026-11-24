@@ -1,0 +1,61 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.146'
+}
+// 轮次写在本目录不入库的 round.properties 里（mod_round=N）；没有这个文件时 jar 不带 -rN。
+def roundFile = file('round.properties')
+def roundProps = new Properties()
+if (roundFile.exists()) { roundFile.withInputStream { roundProps.load(it) } }
+def modRound = roundProps.getProperty('mod_round', '').trim()
+version = modRound ? "${mod_version}-r${modRound}" : mod_version
+group = mod_group_id
+base { archivesName = mod_id }
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
+java.withSourcesJar()
+neoForge {
+    version = project.neo_version
+    runs { client { client() }; server { server(); programArgument '--nogui' } }
+    mods { "${mod_id}" { sourceSet(sourceSets.main) } }
+}
+repositories {
+    maven { url = 'https://maven.fabricmc.net/' }
+    mavenCentral()
+    // FerricOxide jar (compile-libs/), shipped inside this jar.
+    flatDir { dirs 'compile-libs' }
+}
+dependencies {
+    // NeoForge ships Mixin and MixinExtras at runtime; they only need to be visible at compile time.
+    compileOnly 'net.fabricmc:sponge-mixin:0.17.3+mixin.0.8.7'
+    // Optional Jade compat (compat/JadePlugin): only compiled against, never shipped.
+    compileOnly files('compile-libs/Jade-mc26.1-NeoForge-26.1.12.jar')
+    compileOnly 'io.github.llamalad7:mixinextras-common:0.5.4'
+    // LaTeX formulas on paper and boards (GPL-2.0 with the Classpath Exception), shipped inside the jar.
+    jarJar(implementation('org.scilab.forge:jlatexmath')) {
+        version { strictly '[1.0.7,2.0)'; prefer '1.0.7' }
+    }
+    jarJar(implementation('org.scilab.forge:jlatexmath-font-greek')) {
+        version { strictly '[1.0.7,2.0)'; prefer '1.0.7' }
+    }
+    jarJar(implementation('org.scilab.forge:jlatexmath-font-cyrillic')) {
+        version { strictly '[1.0.7,2.0)'; prefer '1.0.7' }
+    }
+    // Video to GIF on posters (BSD-2-Clause, pure Java), shipped inside the jar.
+    jarJar(implementation('org.jcodec:jcodec')) {
+        version { strictly '[0.2.5,0.3)'; prefer '0.2.5' }
+    }
+    // FerricOxide browser (LGPL-3.0, by Gugle, unmodified), shipped inside the jar; called by reflection.
+    // Source: https://github.com/Anvil-Dev/FerricOxide  License text: META-INF/licenses/FerricOxide-LICENSE.txt
+    jarJar(implementation('dev.anvilcraft:ferric_oxide')) {
+        version { strictly '[0.0.0,1.0)'; prefer '0.0.1+build.13' }
+    }
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+def reportedVersion = mod_version.toString()
+processResources {
+    def props = [minecraft_version: minecraft_version, minecraft_version_range: minecraft_version_range,
+                 neo_version: neo_version, loader_version_range: loader_version_range,
+                 mod_id: mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: reportedVersion]
+    inputs.properties props
+    filteringCharset = 'UTF-8'
+    filesMatching('META-INF/neoforge.mods.toml') { expand props }
+}

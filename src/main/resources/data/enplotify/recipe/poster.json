@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["PP", "PP"],
+  "key": { "P": "minecraft:paper" },
+  "result": { "id": "enplotify:poster", "count": 1 }
+}

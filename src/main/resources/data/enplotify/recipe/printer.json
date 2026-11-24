@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "IRI",
+    "SPS"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "R": "minecraft:redstone",
+    "S": "minecraft:smooth_stone",
+    "P": "minecraft:paper"
+  },
+  "result": {
+    "id": "enplotify:printer",
+    "count": 1
+  }
+}

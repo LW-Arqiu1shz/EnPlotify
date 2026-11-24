@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:iron_nugget",
+    [
+      "minecraft:ink_sac",
+      "minecraft:glow_ink_sac"
+    ],
+    "minecraft:stick"
+  ],
+  "result": {
+    "id": "enplotify:whiteboard_marker",
+    "count": 1
+  }
+}

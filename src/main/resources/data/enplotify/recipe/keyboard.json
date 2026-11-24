@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BBB",
+    "NRN"
+  ],
+  "key": {
+    "B": "minecraft:stone_button",
+    "N": "minecraft:iron_nugget",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "enplotify:keyboard",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "enplotify:display",
+    "enplotify:whiteboard"
+  ],
+  "result": { "id": "enplotify:sawmo_whiteboard", "count": 1 }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper",
+    [
+      "minecraft:ink_sac",
+      "minecraft:glow_ink_sac"
+    ],
+    "minecraft:feather"
+  ],
+  "result": {
+    "id": "enplotify:document",
+    "count": 1
+  }
+}

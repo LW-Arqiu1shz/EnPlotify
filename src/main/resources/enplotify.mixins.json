@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.lwarqiu1shz.enplotify.mixin",
+  "mixins": [],
+  "client": [
+    "ClientInputAccessor",
+    "client.CameraMixin",
+    "client.GuiRenderStateMixin",
+    "client.ModListScreenMixin",
+    "client.ModListEntryMixin",
+    "client.ModListSortMixin",
+    "client.MultiLineEditBoxAccessor",
+    "client.MultilineTextFieldAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

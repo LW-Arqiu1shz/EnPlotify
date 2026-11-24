@@ -1,0 +1,5 @@
+This jar contains FerricOxide 0.0.1+build.13 (META-INF/jarjar), unmodified.
+FerricOxide - Copyright (c) 2024 Gugle - GNU LGPL 3.0 (see FerricOxide-LICENSE.txt).
+Source code: https://github.com/Anvil-Dev/FerricOxide
+You may replace it with another version by putting that FerricOxide jar in your mods folder;
+the newer version is used.

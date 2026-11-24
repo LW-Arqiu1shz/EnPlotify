@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SSS",
+    "SBS",
+    "SSS"
+  ],
+  "key": {
+    "S": "minecraft:stick",
+    "B": [
+      "minecraft:coal",
+      "minecraft:charcoal"
+    ]
+  },
+  "result": {
+    "id": "enplotify:blackboard",
+    "count": 1
+  }
+}
